@@ -12,7 +12,7 @@
             Extra: Permita ao usuário escolher quantos números ele quer inserir.
             */
 
-            // Procedural
+            // Versão Procedural
             int[] numeros = new int[1];            
             int quantidade = 0;
             int counter = 0;
