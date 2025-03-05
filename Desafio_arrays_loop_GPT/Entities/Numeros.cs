@@ -8,52 +8,48 @@ namespace Desafio_arrays_loop_GPT.Entities
 {
     public class Numeros
     {
-        public int[] Numero { get; private set; }
+        public List<int> ListaNumeros { get; private set; }
 
-        public Numeros(int tamanho)
+        public Numeros()
         {
-            if (tamanho <= 0)
-            {
-                throw new ArgumentException("O tamanho do array deve ser maior que zero");
-            }
-            Numero = new int[tamanho];
+            ListaNumeros = new();
         }
 
-        public void InserirNumeros(int numero, int indice)
-        {
-            if (indice < 0 || indice >= Numero.Length)
-            {
-                throw new IndexOutOfRangeException("Indice Inválido");
-            }
-
-            Numero[indice] = numero;
+        public void InserirNumeros(int numero)
+        {          
+            ListaNumeros.Add(numero);
         }
 
         public int MaiorNumero()
         {
-            if (Numero == null || Numero.Length == 0)
+            if (ListaNumeros.Count == 0)
             {
-                throw new NullReferenceException("O array não foi inicializado");
+                throw new InvalidOperationException("A lista está vazia.");
             }
-            return Numero.Max();
+            return ListaNumeros.Max();
         }
 
         public int MenorNumero()
         {
-            if (Numero == null || Numero.Length == 0)
+            if (ListaNumeros.Count == 0)
             {
-                throw new NullReferenceException("O array não foi inicializado");
+                throw new InvalidOperationException("A lista está vazia.");
             }
-            return Numero.Min();
+            return ListaNumeros.Min();
         }
 
         public double MediaNumeros()
         {
-            if (Numero == null || Numero.Length == 0)
+            if (ListaNumeros.Count == 0)
             {
-                throw new NullReferenceException("O array não foi inicializado");
+                throw new InvalidOperationException("A lista está vazia.");
             }
-            return Numero.Average();
+            return ListaNumeros.Average();
+        }
+
+        public override string ToString()
+        {
+            return $"Resultados:\n - Maior: {MaiorNumero()}\n - Menor: {MenorNumero()}\n - Média: {MediaNumeros():F2}";
         }
     }
 }
