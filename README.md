@@ -2,6 +2,14 @@
 
 Este repositório contém uma solução para um desafio de programação que envolve manipulação de arrays e loops em C#. O objetivo do desafio é implementar uma classe `Numeros` que permite inserir números inteiros, calcular o maior número, o menor número e a média dos números inseridos, utilizando a programação orientada a objetos e a classe `List<int>`.
 
+## Indice
+- [Funcionalidades](Funcionalidades)
+- [Destaques](Destaques)
+- [Como usar](Como-usar)
+- [Estrutura do código](Estrutura-do-código)
+- [Requisitos](Requisitos)
+- [Licença](Licença)
+
 ## Funcionalidades
 
 O projeto possui as seguintes funcionalidades:
@@ -87,4 +95,4 @@ A classe **`Program`** é onde a execução do programa começa. Ela gerencia a 
 - **.NET 6 ou superior**
 
 ## Licença
-Este projeto está licenciado sob a Licença MIT - veja o arquivo LICENSE para mais detalhes.
+Este projeto está licenciado sob a Licença MIT - veja o arquivo [LICENSE](LICENSE) para mais detalhes.
