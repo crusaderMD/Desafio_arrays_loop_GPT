@@ -1,4 +1,4 @@
-# Desafio Arrays e Loop - C#
+# Desafio List<T> e Loop - C#
 
 Este repositório contém uma solução para um desafio de programação que envolve manipulação de arrays e loops em C#. O objetivo do desafio é implementar uma classe `Numeros` que permite inserir números inteiros, calcular o maior número, o menor número e a média dos números inseridos, utilizando a programação orientada a objetos e a classe `List<int>`.
 
