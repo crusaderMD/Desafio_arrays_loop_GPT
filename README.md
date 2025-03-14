@@ -45,6 +45,21 @@ Esses métodos são utilizados nas funções MaiorNumero(), MenorNumero() e Medi
 
 Os métodos LINQ fazem parte da biblioteca padrão do C# e são uma das maneiras mais eficientes de trabalhar com coleções de dados, oferecendo uma sintaxe fluida e poderosa para manipulação de listas e outras coleções.
 
+### Princípios da POO Aplicados
+O projeto implementa dois pilares fundamentais da **Programação Orientada a Objetos (POO)**:
+
+####  Abstração
+A classe `Numeros` representa uma abstração de um conjunto de números inteiros, fornecendo métodos específicos para manipulação desses dados.  
+- O usuário interage apenas com os métodos públicos (`InserirNumeros`, `MaiorNumero`, `MenorNumero`, `MediaNumeros`), sem precisar saber como os dados são armazenados internamente.  
+- A abstração simplifica o uso da classe, permitindo operações diretas e intuitivas.
+
+#### Encapsulamento
+O atributo `ListaNumeros` é **privado** e acessível apenas dentro da classe, garantindo que a lista de números só possa ser modificada através dos métodos definidos.  
+- O modificador `private set;` impede modificações externas na lista, garantindo controle total sobre os dados.  
+- Isso protege a integridade da lista e evita que seja alterada indevidamente de fora da classe.
+
+Essas práticas tornam o código mais modular, seguro e fácil de manter!
+
 ## Como usar
 
 1. Clone este repositório em sua máquina:
